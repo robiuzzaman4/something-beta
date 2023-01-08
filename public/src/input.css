@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .activeLink {
+        @apply text-rose-500;
+    }
+    .custom-container {
+        @apply max-w-screen-lg m-auto p-6;
+    }
+    .navLinkSm {
+        @apply block w-full py-[10px] text-sm font-medium text-zinc-100 transition hover:text-teal-500 border-b border-zinc-700/30;
+    }
+    .navLinkMd {
+        @apply text-sm font-medium text-zinc-100 hover:text-teal-500 py-[10px] transition;
+    }
+}

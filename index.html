@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Portfolio</title>
+    <!-- OUTPUT CSS FILE LINK -->
+    <link rel="stylesheet" href="./public/dist/output.css">
+    <!-- BOXICON CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- GOOGLE FONTS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-zinc-900 text-zinc-100 min-h-screen font-inter">
+    <!-- HEADER SECTION START -->
+    <header class="w-full">
+        <!-- NAV SECTION START -->
+        <nav class="relative">
+            <!-- NAVIGATION FOR LEARGE DEVICES START -->
+            <div class="custom-container flex items-center justify-between">
+                <a href="#" class="w-10 h-10 bg-zinc-800 border border-zinc-700/30 hover:border-zinc-700/70 rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clip-rule="evenodd" />
+                    </svg>
+                      
+                </a>
+                <!-- NAVLIST -->
+                <div class="h-10 w-72 bg-zinc-800 border border-zinc-700/30 hover:border-zinc-700/70 rounded-full md:flex items-center justify-between px-6 gap-2 cursor-pointer hidden">
+                    <a href="#" class="navLinkMd">Home</a>
+                    <a href="#" class="navLinkMd">About</a>
+                    <a href="#" class="navLinkMd">Price</a>
+                    <a href="#" class="navLinkMd">Contact</a>
+                </div>
+
+                <!-- MENU BUTTON -->
+                <div class="h-10 w-24 bg-zinc-800 border border-zinc-700/30 hover:border-zinc-700/70 rounded-full flex items-center justify-between px-3 gap-2 cursor-pointer text-sm font-medium text-zinc-500 hover:text-zinc-100 md:hidden"  id="menuBtn">
+                    <p class="text-zinc-100">Menu</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.25" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>   
+                </div>
+            </div>
+            <!-- NAVIGATION FOR LEARGE DEVICES END -->
+
+            <!-- NAVIGATION FOR SMALL DEVICES START -->
+            <div class="custom-container backdrop-blur bg-black/80 transition hidden fixed top-0 left-0 right-0 bottom-0" id="navList">
+                <!-- NAVIGATION CONTAINER START -->
+                <div class="flex flex-col items-start justify-between gap-4 h-auto w-full p-6 bg-zinc-900 border border-zinc-700/30 rounded-xl">
+                    <!-- NAVLIST TITLE & CROS BUTTON START -->
+                    <div class="flex items-center justify-between w-full mt-2">
+                        <p class="text-lg font-medium text-zinc-500">Navigation</p>
+                        <div class="cursor-pointer text-zinc-500 hover:text-zinc-100" id="crosBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>                          
+                        </div>
+                    </div>
+                    <!-- NAVLIST TITLE & CROS BUTTON END -->
+
+                    <!-- NAVLIST START -->
+                    <div class="flex flex-col items-start justify-between gap-2 w-full">
+                        <a href="#" class="navLinkSm">Home</a>
+                        <a href="#" class="navLinkSm">About Us</a>
+                        <a href="#" class="navLinkSm">Pricing</a>
+                        <a href="#" class="navLinkSm border-none"> Contact</a>
+                    </div>
+                    <!-- NAVLIST END -->
+                </div>
+                <!-- NAVIGATION CONTAINER END -->
+            </div>
+            <!-- NAVIGATION FOR SMALL DEVICES END -->
+        </nav>
+        <!-- NAV SECTION END -->
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- HERO SECTION START -->
+    <section class="custom-container my-10">
+        <figure class="flex flex-col items-center text-center gap-6">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Build, Develop & Preview</h1>
+            <p class="font-medium text-zinc-400 max-w-[80vw] lg:max-w-[50vw]">Faster is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.</p>
+            <a href="#" class="h-12 w-full md:w-32 p-1 rounded-lg bg-zinc-800 flex items-center justify-center border border-zinc-700/30 hover:border-zinc-700/70 text-sm hover:text-teal-500 font-medium transition">Learn More</a>
+        </figure>
+    </section>
+    <!-- HERO SECTION END -->
+
+
+
+    <!-- JS FILE LINK -->
+    <script src="./public/javascript/script.js"></script>
+</body>
+</html>
